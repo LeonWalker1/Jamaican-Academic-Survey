@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Short survey on Jamaican Academics">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Jamaica Academics Survey</title>
+</head>
+
+<body>
+
+    <h1 id="title">Jamaican Academic Survey Form</h1>
+    <p id="description">This Survey is to Assess the Academic levels of Jamaican citizens</p>
+
+<hr/>
+
+    <form id="survey-form" method="post" action='#'>
+
+        <fieldset>
+            <label for="name" id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="Enter you name..." required/>
+            </label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" placeholder="Enter your email..." validation required/>
+            </label>
+            <label for="number" id="number-label">Enter Your Age: <input id="number" type="number" min="12" max="120" placeholder="Age..." />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male"> <input id="male" type="radio" name="male-female-other" value="male"  class="inline" /> Male</label>
+            <label for="female"> <input id="female" type="radio" name="male-female-other" value="female"  class="inline" /> Female</label>
+            <label for="other"> <input id="other" type="radio" name="male-female-other" value="other"  class="inline" /> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="parish">Choose your Parish:
+                <select id="dropdown" name="parish">
+                    <option value="">(Select one)</option>
+                    <option value="N/A">N/A</option>
+                    <option value="Clarendon">Clarendon</option>
+                    <option value="Hanover">Hanover</option>
+                    <option value="Saint Thomas">Saint Thomas</option>
+                    <option value="Saint Mary">Saint Mary</option>
+                    <option value="Saint Elizabeth">Saint Elizabeth</option>
+                    <option value="Kingston">Kingston</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Saint Ann">Saint Ann</option>
+                    <option value="Saint Catherine">Saint Catherine</option>
+                    <option value="Westmoreland">Westmoreland</option>
+                    <option value="Trelawny">Trelawny</option>
+                    <option value="Saint Andrew">Saint Andrew</option>
+                    <option value="Saint James">Saint James</option>
+                    <option value="other">Other...(please state below)</option>
+                </select>
+
+            <label for="EDlevel">What is your highest level of education?
+                <select id="dropdown" name="EDlevel">
+                    <option value="">(Select one)</option>
+                    <option value="N/A">N/A</option>
+                    <option value="Primary">Primary</option>
+                    <option value="Secondary">Secondary</option>
+                    <option value="Tertairy">Tertairy</option>
+                    <option value="Higher Education">Higher Education</option>
+                    <option value="other">Other...(please state below)</option>
+                </select>
+              
+            <label for="school-name">Name of High School:
+                <select id="dropdown" name="school-name">
+                    <option value="">(Select High School)</option>
+                    <option value="N/A">N/A</option>
+                    <option value="Campion College">Campion College</option>
+                    <option value="Wolmers Girls School">Wolmers Girls School</option>
+                    <option value="St. Hildas High School">St. Hildas High School</option>
+                    <option value="Glenmuir High School">Glenmuir High School</option>
+                    <option value="St. Andrew High School forGirls">St. Andrew High School forGirls</option>
+                    <option value="Ardenne High School">Ardenne High School</option>
+                    <option value="Immaculate Conception HighSchool">Immaculate Conception HighSchool</option>
+                    <option value="Westwood High School">Westwood High School</option>
+                    <option value="Wolmers Boys School">Wolmers Boys School</option>
+                    <option value="Knox College">Knox College</option>
+                    <option value="other">Other...(please state below)</option>
+                </select>
+
+                <label for="school-name">Name of University:
+                    <select id="dropdown" name="school-name">
+                        <option value="">(Select University)</option>
+                        <option value="N/A">N/A</option>
+                        <option value="University of the West Indies at Mona">University of the West Indies at Mona</option>
+                        <option value="University of Technology, Jamaica">University of Technology, Jamaica</option>
+                        <option value="Northern Caribbean University">Northern Caribbean University</option>
+                        <option value="University College of the Caribbean">University College of the Caribbean</option>
+                        <option value="Mico University College">Mico University College</option>
+                        <option value="other">Other...(please state below)</option>
+                    </select>
+
+            <label for="bio">If Other Please State:
+                <textarea id="other" name="other" rows="3" cols="30" placeholder="Other..."></textarea>
+            </label>
+        </fieldset> 
+
+        <Fieldset>
+            <legend>Acheivements:</legend>
+            <label><input type="checkbox" class="inline" value="Higher Certificates (HCert)"/> Higher Certificates (HCert)</label>
+            <label><input type="checkbox" class="inline" value="Diplomas (Dip)"/> Diplomas (Dip)</label>
+            <label><input type="checkbox" class="inline" value="Advanced Diplomas (AdvDip)"/> Advanced Diplomas (AdvDip)</label>
+            <label><input type="checkbox" class="inline" value="Bachelor's degrees (B degrees)"/> Bachelor's degrees (B degrees)</label>
+            <label><input type="checkbox" class="inline" value="CAPE Diploma"/> CAPE Diploma</label>
+            <label><input type="checkbox" class="inline" value="CXC Diploma"/> CXC Diploma</label>
+            <label><input type="checkbox" class="inline" value="other"/> Other...(please state below)</label>
+        </Fieldset>
+
+        <label for="bio">If Other or Acheiment not listed, Please Please State:
+            <textarea id="other" name="other" rows="6" cols="30" placeholder="Acheivments..."></textarea>
+        </label>
+
+        <input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>

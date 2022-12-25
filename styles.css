@@ -1,0 +1,90 @@
+body {
+    background-color: rgba(51, 51, 51, 0.925);
+    color: #f5f6f7;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    height: 100vh;
+}
+
+h1, p {
+    text-align: center;
+    font-size: 30px;
+    margin: 2rem auto;
+    
+}
+
+p {
+    margin-top: -25px;
+}
+
+hr {
+    width: 53%;
+    margin-bottom: -40px;
+}
+
+form {
+    width: 60vw;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    font-weight: bold;
+  }
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 10px 0 0 0;
+    background-color: #333;
+    color: #f5f6f7;
+    min-height: 2em;
+    border: 1px solid #333;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid #f5f6f7;
+    margin-bottom: -20px;
+  }
+
+option {
+    color: f5f6f7;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: large;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0 -25px 80px;
+}
+
+legend {
+    padding-top: 40px;
+    margin-bottom: -25px;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #333;
+    border-color: white;
+    min-width: 300px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: black;
+  }
